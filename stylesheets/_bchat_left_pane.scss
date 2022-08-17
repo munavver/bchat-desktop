@@ -24,8 +24,9 @@ $bchat-compose-margin: 20px;
     transition: $bchat-transition-duration;
 
     &:hover {
-      // background: var(--color-clickable-hovered);
-      background: #242431;
+      background: var(--color-clickable-hovered);
+      box-shadow:var(--color-Bchat-shadow) ;
+      // background: #242431;
     }
 
     &--is-selected {
@@ -41,13 +42,14 @@ $bchat-compose-margin: 20px;
 
     &--has-unread {
       // border-left: var(--border-unread);
-      // background: var(--color-conversation-item-has-unread);
-      background-color: #39394A;
+      background: var(--color-conversation-item-has-unread);
+      // background-color: #39394A;
       margin-bottom: 2px;
       // border-radius: 10px;
       padding-left: 6px;
       // border-top: 1px solid #1c1c26;
-      border-bottom: 1px solid #1c1c26;
+      border-bottom: 1px solid var(--color-borderBottomColor);
+      // border-bottom: 1px solid #1c1c26;
       .verticalLine
       {
         width: 5px;
@@ -137,7 +139,9 @@ $bchat-compose-margin: 20px;
     height: $main-view-header-height;
     // padding-inline-end: 7px;
     padding: 0 10px;
+    margin-bottom: 7px;
     transition: $bchat-transition-duration;
+    box-shadow: 0px 0px 5px 0px #00000029;
 
     &__title {
       padding: 0 var(--margins-sm);
@@ -145,6 +149,15 @@ $bchat-compose-margin: 20px;
       color: var(--color-text);
       font-family: $bchat-font-poppin-semibold;
       font-size: 22px;
+    }
+
+    .dayAndNightIcon
+    {
+      background-image: var(--image-DayNight);
+      width: 25px;
+      height: 25px;
+      background-size: contain;
+      cursor: pointer;
     }
 
     .bchat-button {
@@ -251,7 +264,7 @@ $bchat-compose-margin: 20px;
     .buttonBox
     {
       width: 100%;
-    background-color: #2B2B38;
+    background-color: var(--color-inboxBgColor);
     padding: 0 0 ;
     text-align: center;
     }
@@ -261,6 +274,7 @@ $bchat-compose-margin: 20px;
       height: 42px;
       border: none;
       border-radius: 10px;
+      color: #fff;
       font-family: $bchat-font-poppin-semibold;
       background-image: linear-gradient(180deg, #00A803, #007E02);
       margin: 28px auto;
@@ -331,6 +345,8 @@ $bchat-compose-margin: 20px;
       width: 90%;
       background-color: var(--color-inboxBgColor);
       margin: 0 auto;
+      border: none;
+      box-shadow: var(--color-bchat-shadow);
 
       textarea::-webkit-inner-spin-button {
         margin: 0px 20px;
@@ -392,8 +408,9 @@ $bchat-compose-margin: 20px;
     margin-bottom: 10px;
     display: inline-flex;
     flex-shrink: 0;
-    background: #262633;
+    background:var(--color-inboxBgColor);
     padding: 0 21px;
+    box-shadow:var(--color-Bchat-shadow);
  .bchat-icon-button {
     margin: auto 10px;
   }

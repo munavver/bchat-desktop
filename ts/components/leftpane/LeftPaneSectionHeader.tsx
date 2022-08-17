@@ -118,15 +118,15 @@ export const LeftPaneSectionHeader = (props: { buttonClicked?: any }) => {
 function Moon ()
 {
   if (SectionType.Settings !==focusedSection) {
-    return <div style={{marginRight:"10px"}}>
- <BchatIconButton
+    return <div style={{marginRight:"10px"}} className='dayAndNightIcon'  onClick={handleClick} >
+ {/* <BchatIconButton
   iconSize="large"
   iconType={'moon'}
   dataTestId="theme-section"
   iconColor={undefined}
   onClick={handleClick}
  
-/>
+/> */}
     </div>
    
   }

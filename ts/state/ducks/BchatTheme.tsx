@@ -24,11 +24,11 @@ const darkColorTextOpposite = white;
 
 const darkColorTextSubtle = `${white}99`;
 const darkColorTextAccent = accentDarkTheme;
-const darkColorBchatShadow = `0 0 4px 0 ${white}33`;
+const darkColorBchatShadow = `0px 3px 5px 0px #00000029`;
 const darkColorComposeViewBg = '#232323';
 const darkColorSentMessageBg = accentDarkTheme;
 const darkColorSentMessageText = white;
-const darkColorClickableHovered = '#303041';
+const darkColorClickableHovered = '#242431';
 const darkColorBchatBorder = `2px solid #16161F`;
 const darkColorBchatBorderColor = borderDarkThemeColor;
 const darkColorRecoveryPhraseBannerBg = '#1f1f1f';
@@ -51,7 +51,7 @@ const darkFakeChatBubbleBg = '#212121';
 const darkInboxBackground = '#1C1C26';
 const darkLeftPaneOverlayBg = darkInboxBackground;
 const darkConversationItemSelected = '#37374A';
-const darkConversationItemHasUnread = '#2c2c2c';
+const darkConversationItemHasUnread = '#39394A';
 const darkConversationList = '#1C1C26';
 
 const darkTextHighlight = `${white}88`;
@@ -69,6 +69,8 @@ const darkcomposeMsgRecordIcon ="#85858F";
 
 // for bchat
 const darkColorBg="black"
+// const darkunreadBg="#39394A";
+const darkBorderBottomColor="#1A1A24"
 const darkInboxBgColor="#353543";
 const darkHintMessage="#7B7B86";
 const darkTextAreaColor="#0BB70F"; 
@@ -81,10 +83,11 @@ const darkHintColor=lightGreyColor;
 const darkCopyIcon="#fff"
 const darkChatHeader="black";
 
-const darkEmptyChatImg=`url("../images/bchat/emptyMessage.svg")`
+const darkEmptyChatImg=`url("../images/bchat/emptyMessage.svg")`;
 const darkBgDoodle=`url("../images/bchat/doodle_white.svg")`;
 const darkChatIcons="white";
 const darkComposeMsgInput="#3F3C4B";
+const darkDayNight=`url("../images/bchat/light_theme .svg")`
 
 
 export const switchHtmlToDarkTheme = () => {
@@ -98,7 +101,7 @@ export const switchHtmlToDarkTheme = () => {
   document.documentElement.style.setProperty('--color-text-accent', darkColorTextAccent);
   document.documentElement.style.setProperty('--color-text-opposite', darkColorTextOpposite);
   document.documentElement.style.setProperty('--color-text-signIn', darkSinginTextColor);
-  document.documentElement.style.setProperty('--color-Bchat-shadow', darkColorBchatShadow);
+  document.documentElement.style.setProperty('--color-bchat-shadow', darkColorBchatShadow);
   document.documentElement.style.setProperty('--color-Bchat-hint', darkHintColor);
   document.documentElement.style.setProperty('--color-copyIcon', darkCopyIcon);
   document.documentElement.style.setProperty(
@@ -189,7 +192,14 @@ export const switchHtmlToDarkTheme = () => {
     darkMessageRequestBannerIcon
   );
 
-
+  // document.documentElement.style.setProperty(
+  //   '--color-unreadBg',
+  //   darkunreadBg
+  // );
+  document.documentElement.style.setProperty(
+    '--color-borderBottomColor',
+    darkBorderBottomColor
+  );
   document.documentElement.style.setProperty(
     '--color-inboxBgColor',
     darkInboxBgColor
@@ -233,6 +243,10 @@ export const switchHtmlToDarkTheme = () => {
     darkcomposeMsgRecordIcon
   );
   document.documentElement.style.setProperty(
+    '--image-DayNight',
+    darkDayNight
+  );
+  document.documentElement.style.setProperty(
     '--image-EmptyChatImg',
     darkEmptyChatImg
   );
@@ -254,12 +268,12 @@ const lightColorText = '#222222';
 const lightColorTextOpposite = white;
 const lightColorTextSubtle = `${black}99`;
 const lightColorTextAccent = accentLightTheme;
-const lightColorBchatShadow = `0 0 4px 0 ${black}5E`;
+const lightColorBchatShadow = `0 0 4px 0 #00000029`;
 const lightColorComposeViewBg = '#efefef';
 const lightColorSentMessageBg = "#2879FB";
-const lightColorClickableHovered = '#242431';
+const lightColorClickableHovered = '#F8F8F8';
 const lightColorBchatBorderColor = borderLightThemeColor;
-const lightColorBchatBorder = `1px solid ${lightColorBchatBorderColor}`;
+const lightColorBchatBorder = `1px solid #E3E3E3 `;
 const lightColorRecoveryPhraseBannerBg = white;
 const lightColorPillDivider = `${black}1A`;
 const lightColorLastSeenIndicator = black;
@@ -281,7 +295,7 @@ const lightFakeChatBubbleBg = '#f5f5f5';
 const lightInboxBackground = white;
 const lightLeftPaneOverlayBg = lightInboxBackground;
 const lightConversationItemSelected = '#f0f0f0';
-const lightConversationItemHasUnread = '#fcfcfc';
+const lightConversationItemHasUnread = '#EDEDED';
 const lightConversationList = '#f9f9f9';
 
 const lightTextHighlight = `${black}88`;
@@ -297,6 +311,7 @@ const lightMessageRequestBannerIcon = white;
 
 // for bchat
 const lightColorBg=white; 
+// const lightunreadBg="#EDEDED";
 const lightInboxBgColor="#FCFCFC";
 const lightHintMessageText="black";
 const lightTextAreaColor="black";
@@ -312,6 +327,8 @@ const lightChatHeader='#EEEEEE';
 const lightChatIcons="black";
 const lightComposeMsgInput="#EAEAEA";
 const lightcomposeMsgRecordIcon="#85858F";
+const lightDayNight=`url("../images/bchat/moon.svg")`;
+const lightBorderBottomColor='#E3E3E3';
 
 export const switchHtmlToLightTheme = () => {
   document.documentElement.style.setProperty('--color-body-bg:', lightColorBg);
@@ -422,6 +439,18 @@ export const switchHtmlToLightTheme = () => {
     '--color-settingIndication',
     lightSettingIndication
   );
+  // document.documentElement.style.setProperty(
+  //   '--color-unreadBg',
+  //   lightunreadBg
+  // );
+  document.documentElement.style.setProperty(
+    '--color-borderBottomColor',
+    lightBorderBottomColor
+  );
+  document.documentElement.style.setProperty(
+    '--color-inboxBgColor',
+    lightInboxBgColor
+  );
   document.documentElement.style.setProperty(
     '--color-composeMsgIconBG',
     darkComposeMsgIconBG
@@ -446,6 +475,10 @@ export const switchHtmlToLightTheme = () => {
   document.documentElement.style.setProperty(
     '--color-chatIcons',
     lightChatIcons
+  );
+  document.documentElement.style.setProperty(
+    '--image-DayNight',
+    lightDayNight
   );
   
   document.documentElement.style.setProperty(
@@ -525,8 +558,10 @@ export const BchatGlobalStyles = createGlobalStyle`
     --color-background-primary: ${lightBackgroundPrimary};
     --color-button-green: ${lightButtonGreen};
     --color-modal-background: ${lightModalBackground};
-
+    
+   
     --color-inboxBgColor:${lightInboxBgColor};
+    --color-borderBottomColor:${lightBorderBottomColor};
     --color-HintMessageText:${lightHintMessageText};
     --color-TextAreaColor:${lightTextAreaColor};
     --color-composeMsgBg:${lightComposeMsgBg};
@@ -540,7 +575,7 @@ export const BchatGlobalStyles = createGlobalStyle`
    
     --image-EmptyChatImg:${lightEmptyChatImg};
     --image-BgDoodle:${lightBgDoodle};
-
+    --image-DayNight:${lightDayNight};
 
 
 
