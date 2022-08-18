@@ -112,6 +112,8 @@ const LeftPaneSettingsCategoryRow = (props: {
            id={'onion-path-indicator-led-id'}
          /></span>:
          <i className="left-pane-setting-category-list-item-icons" style={{backgroundImage:`url(images/bchat/${icon})`}}></i>
+        // <i className="left-pane-setting-category-list-item-icons" style={{backgroundImage:`var(--image-DayNight)`}}></i>
+
          }
          
        {/* <i className="left-pane-setting-category-list-item-icons" style={{backgroundImage:`url(images/bchat/${icon})`}}></i> */}

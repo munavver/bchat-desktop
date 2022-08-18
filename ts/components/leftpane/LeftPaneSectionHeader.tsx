@@ -87,10 +87,10 @@ export const LeftPaneSectionHeader = (props: { buttonClicked?: any }) => {
 
     }
     else{
-      return <div style={{marginLeft:"20px",color:"white"}}>
+      return <div className='module-left-pane__header_gearIcon'>
          <BchatIcon  
          iconType={"gear"}
-         iconColor={"#fff"}
+        //  iconColor={"#fff"}
          iconSize={"large"}
          />
      </div>
@@ -150,7 +150,10 @@ function Moon ()
           />
         )}
        
-        {verifyScreens()}
+       <div className=''>
+       {verifyScreens()}
+       </div>
+        
        
        <div className='module-left-pane__header__title'>
        {label}

@@ -187,7 +187,7 @@ textarea {
     }
     &.danger {
       @include transparent-background($bchat-color-danger);
-      background-color: #1F1F29;
+      
     }
     &.warning {
       @include transparent-background($bchat-color-warning-alt);
@@ -567,7 +567,7 @@ label {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #444455;
+    background-color:var(--color-input-background);
     padding: 11px 25px;
     border-radius: 7px;
     .bchat-button {
@@ -640,21 +640,22 @@ label {
 }
 
 .bchat-toggle {
-  width: 45px;
+  width: 50px;
   height: 22px;
   /* border: 1.5px solid #e5e5ea; */
   border-radius: 11px;
   position: relative;
   cursor: pointer;
-  background-color: #000;
+  background-color:var(--color-toggleOff);
+  box-shadow: var(--color-bchat-shadow);
   .knob {
     position: absolute;
-    top: -5px;
+    top: -2px;
     left: -2.5px;
-    height: 30px;
-    width: 30px;
+    height: 25px;
+    width: 25px;
     border-radius: 28px;
-    background-color: $bchat-color-white;
+    background-color:#ECECEC;
     box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.05), 0 3px 1px 0 rgba(0, 0, 0, 0.05),
       0 2px 2px 0 rgba(0, 0, 0, 0.1), 0 3px 3px 0 rgba(0, 0, 0, 0.05);
 
@@ -669,6 +670,7 @@ label {
     .knob {
       transform: translateX(20px);
       background-color: $bchat-color-green;
+      left:10px;
 
     }
   }
@@ -917,6 +919,7 @@ label {
     overflow-y: auto;
     overflow-x: hidden;
     padding: 15px;
+    height: 100%;
   }
 
   &-header {
@@ -944,10 +947,11 @@ label {
   &-item {
     font-size: $bchat-font-md;
     padding: $bchat-margin-lg;
-    margin-bottom: 2px;
+    margin-bottom: 4px;
     border-radius:10px;
     background: var(--color-settingIndication);
     color: var(--color-text);
+    // box-shadow: var(--color-bchat-shadow);
    
     &.inline {
       display: flex;
@@ -989,6 +993,10 @@ label {
       .bchat-toggle {
         transition: $bchat-transition-duration;
       }
+      .active
+      {
+        background-color: var(--color-inbox-background);
+      }
     }
     &__dropdownValue {
       width: 78px;
@@ -1017,6 +1025,7 @@ label {
     flex-direction: column;
     justify-content: space-between;
     overflow: hidden;
+    background-color: var(--color-inbox-background);
   }
 
   &__version-info {

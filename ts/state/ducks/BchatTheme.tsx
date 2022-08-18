@@ -2,7 +2,7 @@ import React from 'react';
 
 import { createGlobalStyle } from 'styled-components';
 
-const white = '#F4F4F4';
+const white = '#F2F2F2';
 const black = '#1C1C26';
 const warning = '#e7b100';
 const destructive = '#ff453a';
@@ -82,6 +82,8 @@ const darkSinginTextColor='#128B17';
 const darkHintColor=lightGreyColor;
 const darkCopyIcon="#fff"
 const darkChatHeader="black";
+const darkToggleOff='#000';
+const darkClearBtn="#3D3D4D";
 
 const darkEmptyChatImg=`url("../images/bchat/emptyMessage.svg")`;
 const darkBgDoodle=`url("../images/bchat/doodle_white.svg")`;
@@ -243,6 +245,14 @@ export const switchHtmlToDarkTheme = () => {
     darkcomposeMsgRecordIcon
   );
   document.documentElement.style.setProperty(
+    '--color-toggleOff',
+    darkToggleOff
+  );
+  document.documentElement.style.setProperty(
+    '--color-clearBtn',
+    darkClearBtn
+  );
+  document.documentElement.style.setProperty(
     '--image-DayNight',
     darkDayNight
   );
@@ -278,7 +288,7 @@ const lightColorRecoveryPhraseBannerBg = white;
 const lightColorPillDivider = `${black}1A`;
 const lightColorLastSeenIndicator = black;
 const lightColorQuoteBottomBarBg = '#f0f0f0';
-const lightColorCellBackground = '#f9f9f9';
+const lightColorCellBackground = '#F8F8F8';
 const lightColorReceivedMessageBg = '#f5f5f5';
 const lightColorReceivedMessageText = black;
 
@@ -294,7 +304,7 @@ const lightFakeChatBubbleBg = '#f5f5f5';
 
 const lightInboxBackground = white;
 const lightLeftPaneOverlayBg = lightInboxBackground;
-const lightConversationItemSelected = '#f0f0f0';
+const lightConversationItemSelected = '#fff';
 const lightConversationItemHasUnread = '#EDEDED';
 const lightConversationList = '#f9f9f9';
 
@@ -317,7 +327,7 @@ const lightHintMessageText="black";
 const lightTextAreaColor="black";
 const lightComposeMsgBg="#EEEEEE";
 const lightComposeMsgIconBG="#2879fb";
-const lightSettingIndication="white";
+const lightSettingIndication="#F8F8F8";
 const lightSinginTextColor='#128B17';
 const lightHintColor=lightGreyColor;
 const lightCopyIcon='#0BB70F';
@@ -329,6 +339,8 @@ const lightComposeMsgInput="#EAEAEA";
 const lightcomposeMsgRecordIcon="#85858F";
 const lightDayNight=`url("../images/bchat/moon.svg")`;
 const lightBorderBottomColor='#E3E3E3';
+const lightToggleOff="#C6C6C6"
+const lightClearBtn='#fff'
 
 export const switchHtmlToLightTheme = () => {
   document.documentElement.style.setProperty('--color-body-bg:', lightColorBg);
@@ -477,10 +489,17 @@ export const switchHtmlToLightTheme = () => {
     lightChatIcons
   );
   document.documentElement.style.setProperty(
+    '--color-toggleOff',
+    lightToggleOff
+  );
+  document.documentElement.style.setProperty(
+    '--color-clearBtn',
+    lightClearBtn
+  );
+  document.documentElement.style.setProperty(
     '--image-DayNight',
     lightDayNight
   );
-  
   document.documentElement.style.setProperty(
     '--image-EmptyChatImg',
     lightEmptyChatImg
@@ -572,10 +591,14 @@ export const BchatGlobalStyles = createGlobalStyle`
     --color-copyIcon:${lightCopyIcon};
     --color-chatHeader:${lightChatHeader};
     --color-chatIcons:${lightChatIcons};
+    --color-toggleOff:${lightToggleOff};
+    --color-clearBtn:${lightClearBtn};
+
    
     --image-EmptyChatImg:${lightEmptyChatImg};
     --image-BgDoodle:${lightBgDoodle};
     --image-DayNight:${lightDayNight};
+
 
 
 
