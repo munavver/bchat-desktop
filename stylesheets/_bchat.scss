@@ -726,7 +726,7 @@ label {
     font-size: $bchat-font-sm;
 
     color: var(--color-text);
-    background: #181821;
+    background: var(--color-composeMsgInput);
     // background: var(--color-cell-background);
 
     &:hover {

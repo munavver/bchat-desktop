@@ -9,7 +9,7 @@ const destructive = '#ff453a';
 const accentLightTheme = '#00e97b';
 const accentDarkTheme = '#2879FB';
 const borderLightThemeColor = '#f1f1f1';
-const borderDarkThemeColor = '#ffffff0F';
+// const borderDarkThemeColor = '#ffffff0F';
 const baseColor="#00A803";
 const greyColor="#2D2D3B";
 const lightGreyColor ="#646474";
@@ -30,7 +30,7 @@ const darkColorSentMessageBg = accentDarkTheme;
 const darkColorSentMessageText = white;
 const darkColorClickableHovered = '#242431';
 const darkColorBchatBorder = `2px solid #16161F`;
-const darkColorBchatBorderColor = borderDarkThemeColor;
+// const darkColorBchatBorderColor = borderDarkThemeColor;
 const darkColorRecoveryPhraseBannerBg = '#1f1f1f';
 const darkColorPillDivider = '#353535';
 const darkColorLastSeenIndicator = accentDarkTheme;
@@ -120,7 +120,7 @@ export const switchHtmlToDarkTheme = () => {
     darkColorClickableHovered
   );
   document.documentElement.style.setProperty('--color-bchat-border', darkColorBchatBorder);
-  document.documentElement.style.setProperty('--color-bchat-border', darkColorBchatBorderColor);
+  // document.documentElement.style.setProperty('--color-bchat-border', darkColorBchatBorderColor);
   document.documentElement.style.setProperty(
     '--color-recovery-phrase-banner-background',
     darkColorRecoveryPhraseBannerBg
@@ -272,7 +272,7 @@ export const switchHtmlToDarkTheme = () => {
 };
 
 // LIGHT COLORS
-const lightColorAccent = accentLightTheme;
+const lightColorAccent ="#128b17";
 const lightColorAccentButton = black;
 const lightColorText = '#222222';
 const lightColorTextOpposite = white;
@@ -342,8 +342,11 @@ const lightBorderBottomColor='#E3E3E3';
 const lightToggleOff="#C6C6C6"
 const lightClearBtn='#fff'
 
+const lightProfileBgColor="#F8F8F8";
+
 export const switchHtmlToLightTheme = () => {
   document.documentElement.style.setProperty('--color-body-bg:', lightColorBg);
+  document.documentElement.style.setProperty('--color-profile', lightProfileBgColor);
   document.documentElement.style.setProperty('--color-accent', lightColorAccent);
   document.documentElement.style.setProperty('--color-accent-button', lightColorAccentButton);
   document.documentElement.style.setProperty('--color-text', lightColorText);
@@ -369,10 +372,10 @@ export const switchHtmlToLightTheme = () => {
     lightColorClickableHovered
   );
   document.documentElement.style.setProperty('--color-bchat-border', lightColorBchatBorder);
-  document.documentElement.style.setProperty(
-    '--color-bchat-border',
-    lightColorBchatBorderColor
-  );
+  // document.documentElement.style.setProperty(
+  //   '--color-bchat-border',
+  //   lightColorBchatBorderColor
+  // );
   document.documentElement.style.setProperty(
     '--color-recovery-phrase-banner-background',
     lightColorRecoveryPhraseBannerBg
@@ -593,6 +596,8 @@ export const BchatGlobalStyles = createGlobalStyle`
     --color-chatIcons:${lightChatIcons};
     --color-toggleOff:${lightToggleOff};
     --color-clearBtn:${lightClearBtn};
+
+    --color-profile: ${lightProfileBgColor};
 
    
     --image-EmptyChatImg:${lightEmptyChatImg};
