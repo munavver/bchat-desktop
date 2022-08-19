@@ -27,17 +27,13 @@ export const startWalletRpc = async() => {
       walletDir = path.join(os.homedir(), "Beldex");
   }
 
-  //  await fixPath();
-  console.log("uuntu:", process.platform)
-  console.log("product Mode::", process.env.NODE_ENV)
-
-  const rpcExecutable =
-    process.platform === "linux" ? "/beldex-wallet-rpc-ubuntu" : "/beldex-wallet-rpc-darwin";
+  const rpcExecutable = process.platform === "linux" ? "/beldex-wallet-rpc-ubuntu": process.platform ==="win32"
+    ? "/beldex-wallet-rpc-windows" : "/beldex-wallet-rpc-darwin";  
+    
   console.log("rpcExecutable:", rpcExecutable)
   console.log("currentPath:",__dirname)
   console.log("pathsss:", path.join(__dirname, '../../bin'))
 
-  // eslint-disable-next-line no-undef
   let __ryo_bin:string;
   if(process.env.NODE_ENV=='production'){
    __ryo_bin = path.join(__dirname, '../../../bin');  //production

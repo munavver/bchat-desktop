@@ -151,8 +151,8 @@ textarea {
     }
     &.danger {
       // background-color: $bchat-color-danger;
-      background-color: #1F1F29;
-      color:red;
+      background-color: #E22B2B;
+      color: #FFFFFF;
 
       
     }
@@ -415,6 +415,7 @@ label {
 .Toastify__toast {
   background: var($toast-color-success);
   font-family: $bchat-font-poppin-medium;
+
 
   // background: linear-gradient(--color-cell-background);
 
