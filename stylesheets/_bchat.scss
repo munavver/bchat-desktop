@@ -5,6 +5,7 @@ $onionPathLineColor: rgba(#7a7a7a, 0.6);
 }
 .subtle {
   opacity: $bchat-subtle-factor;
+  width: 207px;
 }
 
 .soft {
@@ -106,7 +107,7 @@ textarea {
 
     &:not(.disabled):hover {
       // background: var(--color-clickable-hovered);
-      opacity: 0.6;
+      opacity: 0.8;
     }
 
     &.green,
@@ -131,6 +132,7 @@ textarea {
 
     &.white {
       color: var(--color-text);
+      background-color: var(--color-cancelBtn-bg);
     }
     &.primary {
       background-color: var(--color-background-primary);
@@ -462,7 +464,7 @@ label {
   max-height: 70vh;
   max-width: calc(min(70vw, 800px));
   font-family: $bchat-font-default;
-  background-color: var(--color-profile);
+  background-color: var(--color-smModal-bg);
   color: var(--color-text);
   border: var(--border-bchat);
   box-shadow: var(--color-bchat-shadow);
@@ -478,12 +480,13 @@ label {
     align-items: center;
 
     padding: $bchat-margin-lg;
+    padding-bottom: 0px;
 
-    font-family: $bchat-font-default;
+    font-family: $bchat-font-poppins-bold;
     text-align: center;
     line-height: 18px;
     font-size: $bchat-font-md;
-    font-weight: 700;
+    font-weight:bold;
 
     &.reverse {
       flex-direction: row-reverse;
@@ -568,7 +571,7 @@ label {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color:var(--color-input-background);
+    // background-color:var(--color-input-background);
     padding: 11px 25px;
     border-radius: 7px;
     .bchat-button {
@@ -581,7 +584,13 @@ label {
 
       .bchat-button {
         margin: $bchat-margin-xs;
+
+        .default.white{
+          background-color:var(--color-input-background); 
+        }
+        
       }
+      
     }
   }
   &__button-group:hover
@@ -1420,6 +1429,9 @@ input {
   display: flex;
   justify-content: space-between;
   transition: $bchat-transition-duration;
+  // border:var(--color-bchat-border);
+  border-bottom:var(--color-bchat-border) ;
+  
 
   &:not(:last-child) {
     border-bottom: var(--border-bchat);

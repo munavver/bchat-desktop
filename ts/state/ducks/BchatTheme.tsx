@@ -6,7 +6,7 @@ const white = '#F2F2F2';
 const black = '#1C1C26';
 const warning = '#e7b100';
 const destructive = '#ff453a';
-const accentLightTheme = '#00e97b';
+const accentLightTheme = '#159B24';
 const accentDarkTheme = '#2879FB';
 const borderLightThemeColor = '#f1f1f1';
 // const borderDarkThemeColor = '#ffffff0F';
@@ -84,6 +84,8 @@ const darkCopyIcon="#fff"
 const darkChatHeader="black";
 const darkToggleOff='#000';
 const darkClearBtn="#3D3D4D";
+const darkSmModalBg="#3D3D4E";
+const darkCancelBtnBg="#3D3D4E"
 
 const darkEmptyChatImg=`url("../images/bchat/emptyMessage.svg")`;
 const darkBgDoodle=`url("../images/bchat/doodle_white.svg")`;
@@ -229,6 +231,14 @@ export const switchHtmlToDarkTheme = () => {
     darkComposeMsgIconBG
   );
   document.documentElement.style.setProperty(
+    '--color-smModal-bg',
+    darkSmModalBg
+  );
+  document.documentElement.style.setProperty(
+    '--color-cancelBtn-bg',
+    darkCancelBtnBg
+  );
+  document.documentElement.style.setProperty(
     '--color-settingIndication',
     darkSettingIndication
   );
@@ -281,9 +291,9 @@ const lightColorTextAccent = accentLightTheme;
 const lightColorBchatShadow = `0 0 4px 0 #00000029`;
 const lightColorComposeViewBg = '#efefef';
 const lightColorSentMessageBg = "#2879FB";
-const lightColorClickableHovered = '#F8F8F8';
+const lightColorClickableHovered = '#eaeaea';
 const lightColorBchatBorderColor = borderLightThemeColor;
-const lightColorBchatBorder = `1px solid #E3E3E3 `;
+const lightColorBchatBorder = `2px solid #E3E3E3 `;
 const lightColorRecoveryPhraseBannerBg = white;
 const lightColorPillDivider = `${black}1A`;
 const lightColorLastSeenIndicator = black;
@@ -322,6 +332,8 @@ const lightMessageRequestBannerIcon = white;
 // for bchat
 const lightColorBg=white; 
 // const lightunreadBg="#EDEDED";
+const lightSmModalBg="#F4F4F4";
+const lightCancelBtnBg="#E8E8E8";
 const lightInboxBgColor="#FCFCFC";
 const lightHintMessageText="black";
 const lightTextAreaColor="black";
@@ -482,7 +494,14 @@ export const switchHtmlToLightTheme = () => {
     '--color-composeMsgRecordIcon',
     lightcomposeMsgRecordIcon
   );
-  
+  document.documentElement.style.setProperty(
+    '--color-smModal-bg',
+    lightSmModalBg
+  );
+  document.documentElement.style.setProperty(
+    '--color-cancelBtn-bg',
+    lightCancelBtnBg
+  );
   document.documentElement.style.setProperty(
     '--color-chatHeader',
     lightChatHeader
@@ -580,8 +599,11 @@ export const BchatGlobalStyles = createGlobalStyle`
     --color-background-primary: ${lightBackgroundPrimary};
     --color-button-green: ${lightButtonGreen};
     --color-modal-background: ${lightModalBackground};
+  
+
     
-   
+    --color-smModal-bg:${lightSmModalBg};
+    --color-cancelBtn-bg:${lightCancelBtnBg};
     --color-inboxBgColor:${lightInboxBgColor};
     --color-borderBottomColor:${lightBorderBottomColor};
     --color-HintMessageText:${lightHintMessageText};

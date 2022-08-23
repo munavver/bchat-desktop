@@ -16,11 +16,23 @@ export const LeftPaneSectionContainer = styled.div`
     margin: 3px 24px;
     border-radius: 20px;
   }
+  .icon-box svg:hover
+  {
+    color:#159B24;
+  }
   .isSelected-icon-box {
     padding: 10px;
     margin: 3px 24px;
-    border-radius: 20px;
+    border-radius: 34px;
     background-color: white;
+    
+  }
+  .icon-box:hover 
+  {
+    background-color: white;
+    color:#159B24;
+    border-radius: 34px;
+
   }
 
   .module-avatar {

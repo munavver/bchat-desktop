@@ -18,7 +18,7 @@ export const BchatRegistrationView = () => {
     <div className="bchat-fullscreen">
       <div className="bchat-full-screen-flow bchat-fullscreen">
         <BchatTheme>
-          <div className='bchat-conversation-doodle'>
+          <div className='bchat_conversation-doodle'>
           <Flex
             flexDirection="row"
             container={true}

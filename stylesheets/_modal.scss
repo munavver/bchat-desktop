@@ -30,6 +30,7 @@
   .contact-selection-list {
     width: 100%;
     min-width: 300px;
+    box-shadow:var( --color-bchat-shadow);
   }
 }
 
@@ -184,11 +185,16 @@
     // currently it cause an issues with toast being on the foreground when a modal is shown
     transition: filter 0.1s;
   }
-
+  .groupNameBox
+  {
+    display: flex;
+    border-bottom: var(--border-bchat);
+  }
   input {
-    background-color: var(--color-input-background);
+    background-color: var(--color-smModal-bg);
     color: var(--color-text);
-    border: var(--border-bchat);
+    border-bottom: 0;
+    margin: 0;
   }
 }
 

@@ -130,7 +130,8 @@
     display: flex;
     width: 100%;
     align-items: center;
-    height: 68px;
+    // height: 68px;
+     padding-right: 10px;
 
   }
   .checkedCircle,.isSelected{
@@ -145,16 +146,16 @@
   }
   .checkedCircle
       {
-        border: 1px solid var(--color-text);
+        border: 2px solid var(--color-text);
       }
   &.message-selected {
     background-color: rgba(40, 121, 251, .3);
     
-    .isSelected{
+    // .isSelected{
       
-      border: 1px solid rgba(17, 193, 25, 1);
+    //  border: 1px solid rgba(17, 193, 25, 1);
   
-    }
+    // }
 
     .module-message {
       &__container {
