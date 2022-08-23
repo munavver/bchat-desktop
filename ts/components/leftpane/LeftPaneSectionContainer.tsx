@@ -10,7 +10,7 @@ export const LeftPaneSectionContainer = styled.div`
   background-color:#128B17;
   padding:6px 0; 
 
-  .icon-box
+  .icon-box .bchat-icon-button
   {
     padding: 10px;
     margin: 3px 24px;
@@ -27,7 +27,7 @@ export const LeftPaneSectionContainer = styled.div`
     background-color: white;
     
   }
-  .icon-box:hover 
+  .icon-box .bchat-icon-button:hover 
   {
     background-color: white;
     color:#159B24;

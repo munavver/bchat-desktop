@@ -264,7 +264,7 @@
       word-break: break-all;
       font-size: $bchat-font-md;
       // padding: 0px $bchat-margin-lg;
-      background-color: #3A3A4E;
+      background-color: var(--color-composeMsgInput);
       border-radius: 10px;
       padding: 10px 10px 10px 14px;
       font-family: $bchat-font-default;

@@ -275,7 +275,7 @@ textarea {
   display: inline-block;
   position: relative;
   transform: translateZ(0);
-  color: white;
+   color: white;
 
  
   &:hover {  
@@ -505,6 +505,10 @@ label {
     &__icons,
     &__close {
       width: 60px;
+      .bchat-icon-button
+      {
+       color: var(--color-text); 
+      }
     }
     &__icons {
       float: right;
