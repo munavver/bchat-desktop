@@ -282,16 +282,16 @@
     }
 
     &-display-icon {
-      background:url('/images/bchat/copy_icon.svg');
+      background:url('../images/bchat/copy_icon.svg');
       background-repeat: no-repeat;
-      width: "40px";
-      height: "40px";
-      position: 'relative';
-      background-color:'#353543';
-      background-size:"16px";
-      border-radius:"30px";
-      background-position:"center";
-      cursor:'pointer';
+      width: 40px;
+      height: 40px;
+      position: relative;
+      background-color:var(--color-composeMsgInput);
+      background-size:16px;
+      border-radius:30px;
+      background-position:center;
+      cursor:pointer;
     }
 
     .bchat-button {

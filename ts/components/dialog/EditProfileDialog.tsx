@@ -304,17 +304,18 @@ export class EditProfileDialog extends React.Component<{}, State> {
             <div className='bchat-id-section-display'>
               <div style={{width:'80%',fontFamily:'poppin-medium',fontSize:'12px'}}>{props.bchatID}</div>
               <div  onClick={()=>copyBchatID(props.bchatID)} 
-              style={{
-               background:`url(images/bchat/copy_icon.svg) no-repeat`,
-               width: "40px",
-               height: "40px",
-               position: 'relative',
-               backgroundColor:"#353543",
-               borderRadius:"30px",
-               backgroundSize:'13px',
-               backgroundPosition:"center",
-               cursor:'pointer'
-               }}
+               className="bchat-id-section-display-icon"
+              // style={{
+              //  background:`url(images/bchat/copy_icon.svg) no-repeat`,
+              //  width: "40px",
+              //  height: "40px",
+              //  position: 'relative',
+              //  backgroundColor:"#353543",
+              //  borderRadius:"30px",
+              //  backgroundSize:'13px',
+              //  backgroundPosition:"center",
+              //  cursor:'pointer'
+              //  }}
                ></div>
             </div>
 
@@ -322,16 +323,17 @@ export class EditProfileDialog extends React.Component<{}, State> {
             <div className='bchat-id-section-display'>
               <div style={{width:'80%',fontFamily:'poppin-medium',fontSize:'12px'}}>{'bxdis3VF318i2QDjvqwoG9GyfP4sVjTvwZyf1JGLNFyTJ8fbtBgzW6ieyKnpbMw5bU9dggbAiznaPGay96WAmx1Z2B32B86PE'}</div>
               <div  onClick={()=>copyBchatID('bxdis3VF318i2QDjvqwoG9GyfP4sVjTvwZyf1JGLNFyTJ8fbtBgzW6ieyKnpbMw5bU9dggbAiznaPGay96WAmx1Z2B32B86PE')} 
-              style={{
-               background:`url(images/bchat/copy_icon.svg) no-repeat`,
-               width: "40px",
-               height: "40px",
-               backgroundColor:"#353543",
-               backgroundSize:'13px',
-               borderRadius:"30px",
-               backgroundPosition:"center",
-               cursor:'pointer'
-               }}
+              // style={{
+              //  background:`url(images/bchat/copy_icon.svg) no-repeat`,
+              //  width: "40px",
+              //  height: "40px",
+              //  backgroundColor:"#353543",
+              //  backgroundSize:'13px',
+              //  borderRadius:"30px",
+              //  backgroundPosition:"center",
+              //  cursor:'pointer'
+              //  }}
+              className="bchat-id-section-display-icon"
                ></div>
             </div>
       </div>
