@@ -271,7 +271,16 @@ $bchat-compose-margin: 20px;
       background-color: var(--color-inboxBgColor);
       padding: 0 0;
       text-align: center;
+
+      .bchat-button.brand-outline.danger
+      {
+        width: 79%;
+    height: 42px;
+    margin: 14px auto;
+
+      }
     }
+
 
     .nextButton {
       width: 79%;

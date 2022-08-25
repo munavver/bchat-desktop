@@ -84,7 +84,7 @@ const darkCopyIcon="#fff"
 const darkChatHeader="black";
 const darkToggleOff='#000';
 const darkClearBtn="#3D3D4D";
-const darkSmModalBg="#3D3D4E";
+const darkSmModalBg="#2A2A3B";
 const darkCancelBtnBg="#3D3D4E"
 
 const darkEmptyChatImg=`url("../images/bchat/emptyMessage.svg")`;

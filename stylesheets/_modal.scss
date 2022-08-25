@@ -325,7 +325,13 @@
         padding: 0px $bchat-margin-sm;
         margin-left: 33px;
       }
-
+      .qr-icon-btn {
+        width: 30px;
+        height: 30px;
+        left: 103px;
+        position: relative;
+        cursor: pointer;
+      }
       .bchat-icon-button {
         padding: 0px;
       }
